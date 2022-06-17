@@ -18,7 +18,7 @@ const Home = () => {
             typingSpeed={300}
             deleteSpeed={400}
             strings={[
-              "Weeb Developer.",
+              "Web Developer.",
               <Delete characters={15} />,
               "Mobile Developer.",
               <Delete characters={17} />,
