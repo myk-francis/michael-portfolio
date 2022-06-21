@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/michael-portfolio/static/css/main.ba1090b2.css",
-    "main.js": "/michael-portfolio/static/js/main.1568c5fb.js",
+    "main.js": "/michael-portfolio/static/js/main.c8000421.js",
     "static/media/realestate.jpg": "/michael-portfolio/static/media/realestate.44fd19f4c6872731149c.jpg",
     "static/media/movies.png": "/michael-portfolio/static/media/movies.0b9835301eeac1b0d34c.png",
     "static/media/Handyman.png": "/michael-portfolio/static/media/Handyman.19299a2e8257c2e0233b.png",
     "static/media/homePorto.png": "/michael-portfolio/static/media/homePorto.140b226ba51224eb7f00.png",
+    "static/media/HomeLight.png": "/michael-portfolio/static/media/HomeLight.8be2869c8cdd17ad2bd0.png",
     "static/media/Resume.pdf": "/michael-portfolio/static/media/Resume.fec734d4c64ff5b742ea.pdf",
     "static/media/workImg.jpeg": "/michael-portfolio/static/media/workImg.e4c66be6ae2ae4f83608.jpeg",
     "static/media/react.png": "/michael-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -20,10 +21,10 @@
     "static/media/javascript.png": "/michael-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/michael-portfolio/index.html",
     "main.ba1090b2.css.map": "/michael-portfolio/static/css/main.ba1090b2.css.map",
-    "main.1568c5fb.js.map": "/michael-portfolio/static/js/main.1568c5fb.js.map"
+    "main.c8000421.js.map": "/michael-portfolio/static/js/main.c8000421.js.map"
   },
   "entrypoints": [
     "static/css/main.ba1090b2.css",
-    "static/js/main.1568c5fb.js"
+    "static/js/main.c8000421.js"
   ]
 }
