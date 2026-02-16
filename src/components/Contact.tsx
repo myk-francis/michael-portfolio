@@ -14,10 +14,10 @@ function Contact(): JSX.Element {
           <p className="mt-3 max-w-2xl text-slate-300">
             Send a message through the form or email me directly at{" "}
             <a
-              href="mailto:youraveragecoder@gmail.com"
+              href="mailto:michaelmugendi1707@gmail.com"
               className="font-medium text-cyan-300 underline decoration-cyan-500/60 underline-offset-4"
             >
-              youraveragecoder@gmail.com
+              michaelmugendi1707@gmail.com
             </a>
             .
           </p>
@@ -71,11 +71,11 @@ function Contact(): JSX.Element {
             <div className="card p-5 lg:col-span-2">
               <h4 className="text-lg font-semibold text-white">Direct links</h4>
               <a
-                href="mailto:youraveragecoder@gmail.com"
+                href="mailto:michaelmugendi1707@gmail.com"
                 className="mt-4 inline-flex items-center gap-2 text-slate-200 transition hover:text-cyan-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
               >
                 <HiOutlineMail size={18} />
-                youraveragecoder@gmail.com
+                michaelmugendi1707@gmail.com
               </a>
               <div className="mt-4 flex flex-wrap gap-2">
                 {socialLinks.map((social) => (
