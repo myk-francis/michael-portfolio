@@ -14,17 +14,20 @@ function About(): JSX.Element {
             </div>
             <div className="space-y-4 text-slate-300 lg:col-span-8">
               <p>
-                I am Michael Francis, a software developer with 10+ years of freelance experience
-                helping founders, teams, and businesses ship reliable products.
+                I am Michael Francis, a software developer based in Tanzania,
+                East Africa with 10+ years of freelance experience helping
+                founders, teams, and businesses ship reliable products.
               </p>
               <p>
-                On mobile, I have delivered 3 Expo apps that are published on both iOS and Android app
-                stores. On web, I build scalable Next.js and React applications deployed on modern
-                platforms including Vercel.
+                On mobile, I have delivered 3 Expo apps that are published on
+                both iOS and Android app stores. On web, I build scalable
+                Next.js and React applications deployed on modern platforms
+                including Vercel.
               </p>
               <p>
-                I enjoy combining strong engineering fundamentals with thoughtful UX, so products feel
-                fast, clear, and easy to use across all devices.
+                I enjoy combining strong engineering fundamentals with
+                thoughtful UX, so products feel fast, clear, and easy to use
+                across all devices.
               </p>
             </div>
           </div>
