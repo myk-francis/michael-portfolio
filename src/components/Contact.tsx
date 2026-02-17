@@ -1,5 +1,6 @@
 import { HiOutlineMail } from "react-icons/hi";
 import { Element } from "react-scroll";
+import ResumePdf from "../assets/Resume.pdf";
 import { socialLinks } from "../data/portfolio";
 
 function Contact(): JSX.Element {
@@ -89,6 +90,13 @@ function Contact(): JSX.Element {
                     {social.label}
                   </a>
                 ))}
+                <a
+                  href={ResumePdf}
+                  download="Michael-Francis-Mugendi-Resume.pdf"
+                  className="inline-flex min-h-[40px] items-center rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:border-cyan-300 hover:text-cyan-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                >
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>
