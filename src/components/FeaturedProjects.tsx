@@ -27,6 +27,15 @@ const maintainedProjects: MaintainedProject[] = [
     liveUrl: "https://drinking-games-hub.vercel.app/",
     credentialLabel: "Guest login",
     credentials: "username: guest | password: guest"
+  },
+  {
+    title: "Daily Pesa",
+    description:
+      "A phone-first money tracking app for small businesses to record daily earnings, expenses, and profit with clear owner and staff workflows.",
+    imagePath: `${process.env.PUBLIC_URL}/daily-pesa.png`,
+    liveUrl: "https://daily-pesa-next.vercel.app/",
+    credentialLabel: "Owner demo",
+    credentials: "phone: 0711111111 | password: password123"
   }
 ];
 
@@ -40,7 +49,7 @@ function FeaturedProjects(): JSX.Element {
             Current projects I actively maintain
           </h3>
           <p className="mt-3 max-w-2xl text-slate-300">
-            These are the two primary products I am currently supporting and improving.
+            These are the primary products I am currently supporting and improving.
           </p>
 
           <div className="mt-8 grid gap-5 lg:grid-cols-2">
