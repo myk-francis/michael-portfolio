@@ -20,9 +20,12 @@ export interface ProjectItem {
   title: string;
   description: string;
   image: string;
+  imageFit?: "cover" | "contain";
   stack: string[];
   demoUrl: string;
-  codeUrl: string;
+  demoLabel?: string;
+  codeUrl?: string;
+  codeLabel?: string;
 }
 
 export interface SocialItem {

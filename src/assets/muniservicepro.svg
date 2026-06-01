@@ -1,0 +1,64 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="54" y="52" width="404" height="408" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#F8FAFC"/>
+  <g filter="url(#shadow)">
+    <rect x="80" y="72" width="352" height="352" rx="52" fill="#FCFCFD"/>
+    <rect x="81.5" y="73.5" width="349" height="349" rx="50.5" stroke="#E5E7EB" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(256 248)">
+    <path
+      d="M0 -104L17 -126L45 -122L53 -95L80 -91L80 -63L104 -50L95 -23L112 0L95 23L104 50L80 63L80 91L53 95L45 122L17 126L0 104L-17 126L-45 122L-53 95L-80 91L-80 63L-104 50L-95 23L-112 0L-95 -23L-104 -50L-80 -63L-80 -91L-53 -95L-45 -122L-17 -126L0 -104Z"
+      fill="#143B67"
+    />
+    <circle r="87" fill="#0A0A0A"/>
+    <circle r="75" fill="#153B66"/>
+    <circle r="66" fill="#F9FAFB"/>
+
+    <circle r="53" stroke="#D5B14A" stroke-width="6" fill="none" stroke-dasharray="9 10" stroke-linecap="round"/>
+    <path d="M0 -86L12 -18L0 -26L-12 -18L0 -86Z" fill="#111111"/>
+    <path d="M0 -16L19 -6L19 18L0 30L-19 18L-19 -6L0 -16Z" fill="#D8B45A"/>
+
+    <path
+      d="M-17 26C-17 12 -5 0 10 0H20V70H8C-6 70 -17 58 -17 44V26Z"
+      fill="#111111"
+    />
+    <rect x="8" y="0" width="12" height="94" rx="6" fill="#111111"/>
+
+    <path
+      d="M-42 -24C-27 -39 -7 -48 15 -48C36 -48 56 -40 71 -25"
+      stroke="#E5E7EB"
+      stroke-width="6"
+      stroke-linecap="round"
+    />
+    <path
+      d="M-44 24C-31 42 -10 54 14 54C37 54 58 44 72 27"
+      stroke="#E5E7EB"
+      stroke-width="6"
+      stroke-linecap="round"
+    />
+
+    <path d="M-28 -37A65 65 0 0 1 -12 -46" stroke="#E5E7EB" stroke-width="4" stroke-linecap="round"/>
+    <path d="M33 -43A66 66 0 0 1 50 -31" stroke="#E5E7EB" stroke-width="4" stroke-linecap="round"/>
+
+    <path
+      d="M-29 -33C-15 -45 3 -52 23 -52"
+      stroke="#E5E7EB"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <path
+      d="M-5 -56C6 -56 17 -55 27 -52"
+      stroke="#E5E7EB"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      fill="none"
+    />
+    <text x="-26" y="-46" fill="#6B7280" font-size="9" font-family="Arial, sans-serif" letter-spacing="1.2">SERVICE REQUEST</text>
+  </g>
+</svg>

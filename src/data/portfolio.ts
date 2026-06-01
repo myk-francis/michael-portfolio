@@ -13,6 +13,8 @@ import portfolio from "../assets/homePorto.png";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import coinbase from "../assets/HomeLight.png";
+import muniReadPro from "../assets/munireadpro.png";
+import muniServicePro from "../assets/muniservicepro.png";
 import realEstate from "../assets/realestate.jpg";
 import { SiCloudflare, SiNextdotjs, SiPrisma, SiReact, SiVercel } from "react-icons/si";
 
@@ -44,6 +46,24 @@ export const skills: SkillItem[] = [
 
 export const projects: ProjectItem[] = [
   {
+    title: "MuniServicePro",
+    description: "Client service operations app for managing work orders, field requests, and technician workflows.",
+    image: muniServicePro,
+    imageFit: "contain",
+    stack: ["React Native", "Expo", "Android"],
+    demoUrl: "https://play.google.com/store/apps/details?id=com.munibilling.mspmobileapp",
+    demoLabel: "Play Store"
+  },
+  {
+    title: "MuniReadPro",
+    description: "Client Android app for fast, accurate utility meter reading with offline-friendly field workflows.",
+    image: muniReadPro,
+    imageFit: "contain",
+    stack: ["React Native", "Expo", "Android"],
+    demoUrl: "https://play.google.com/store/apps/details?id=com.munibilling.munireadpro",
+    demoLabel: "Play Store"
+  },
+  {
     title: "Movie Discovery App",
     description: "React web app for browsing and filtering movie content.",
     image: movies,
@@ -57,6 +77,7 @@ export const projects: ProjectItem[] = [
     image: handyman,
     stack: ["React Native", "Expo", "Firebase"],
     demoUrl: "https://github.com/myk-francis/handyman",
+    demoLabel: "View Project",
     codeUrl: "https://github.com/myk-francis/handyman"
   },
   {
@@ -73,6 +94,7 @@ export const projects: ProjectItem[] = [
     image: coinbase,
     stack: ["React", "Charts", "CSS"],
     demoUrl: "https://github.com/myk-francis/coinbase",
+    demoLabel: "View Project",
     codeUrl: "https://github.com/myk-francis/coinbase"
   },
   {

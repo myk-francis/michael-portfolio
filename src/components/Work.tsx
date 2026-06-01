@@ -17,7 +17,15 @@ function Work(): JSX.Element {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
               <article key={project.title} className="card overflow-hidden">
-                <img src={project.image} alt={`${project.title} preview`} className="h-44 w-full object-cover" />
+                <div className="flex h-44 w-full items-center justify-center bg-slate-50/95 p-4">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className={`h-full w-full ${
+                      project.imageFit === "contain" ? "object-contain" : "object-cover"
+                    }`}
+                  />
+                </div>
                 <div className="flex flex-col gap-4 p-5">
                   <div>
                     <h4 className="text-xl font-semibold text-white">{project.title}</h4>
@@ -42,16 +50,18 @@ function Work(): JSX.Element {
                       rel="noreferrer"
                       className="inline-flex min-h-[40px] items-center rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
                     >
-                      Demo
+                      {project.demoLabel ?? "Demo"}
                     </a>
-                    <a
-                      href={project.codeUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex min-h-[40px] items-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
-                    >
-                      Code
-                    </a>
+                    {project.codeUrl ? (
+                      <a
+                        href={project.codeUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex min-h-[40px] items-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                      >
+                        {project.codeLabel ?? "Code"}
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </article>
