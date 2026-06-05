@@ -36,6 +36,15 @@ const maintainedProjects: MaintainedProject[] = [
     liveUrl: "https://daily-pesa-next.vercel.app/",
     credentialLabel: "Owner demo",
     credentials: "phone: 0711111111 | password: password123"
+  },
+  {
+    title: "Read Along",
+    description:
+      "An EPUB reading experience that pairs text with voice playback, helping readers listen along, track spoken lines, and stay focused with adjustable reading settings.",
+    imagePath: `${process.env.PUBLIC_URL}/read-along-app.png`,
+    liveUrl: "https://myk-francis.github.io/read-flow-state/",
+    credentialLabel: "Demo access",
+    credentials: "Opens directly in the browser with no login required"
   }
 ];
 
