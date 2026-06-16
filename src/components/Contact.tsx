@@ -1,9 +1,16 @@
+import { useState } from "react";
+import { FaQrcode } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Element } from "react-scroll";
 import ResumePdf from "../assets/Resume.pdf";
-import { socialLinks } from "../data/portfolio";
+import { portfolioSiteUrl, socialLinks } from "../data/portfolio";
 
 function Contact(): JSX.Element {
+  const [showQrCode, setShowQrCode] = useState(false);
+  const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=${encodeURIComponent(
+    portfolioSiteUrl
+  )}`;
+
   return (
     <Element name="contact">
       <section>
@@ -97,7 +104,50 @@ function Contact(): JSX.Element {
                 >
                   Download Resume
                 </a>
+                <button
+                  type="button"
+                  onClick={() => setShowQrCode((prev) => !prev)}
+                  className="inline-flex min-h-[40px] items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:border-cyan-300 hover:text-cyan-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300"
+                  aria-expanded={showQrCode}
+                  aria-controls="site-qr-panel"
+                >
+                  <FaQrcode size={15} />
+                  Site QR
+                </button>
               </div>
+
+              {showQrCode ? (
+                <div
+                  id="site-qr-panel"
+                  className="mt-5 rounded-2xl border border-cyan-300/20 bg-slate-900/80 p-4 text-center"
+                >
+                  <a
+                    href={portfolioSiteUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block overflow-hidden rounded-2xl border border-white/10 bg-white p-3 transition hover:border-cyan-300/40"
+                  >
+                    <img
+                      src={qrCodeUrl}
+                      alt="QR code for Michael Francis Mugendi portfolio site"
+                      width={220}
+                      height={220}
+                      className="h-auto w-[220px] max-w-full"
+                    />
+                  </a>
+                  <p className="mt-3 text-sm text-slate-300">
+                    Open this QR code so someone nearby can scan and visit your portfolio instantly.
+                  </p>
+                  <a
+                    href={portfolioSiteUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-block break-all text-sm text-cyan-300 underline decoration-cyan-500/60 underline-offset-4"
+                  >
+                    {portfolioSiteUrl}
+                  </a>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

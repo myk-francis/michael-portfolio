@@ -26,6 +26,8 @@ export const navItems: NavItem[] = [
   { id: "contact", label: "Contact" }
 ];
 
+export const portfolioSiteUrl = "https://myk-francis.github.io/michael-portfolio/";
+
 export const skills: SkillItem[] = [
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
