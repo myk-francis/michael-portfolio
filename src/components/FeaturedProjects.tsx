@@ -11,6 +11,15 @@ interface MaintainedProject {
 
 const maintainedProjects: MaintainedProject[] = [
   {
+    title: "Foleni",
+    description:
+      "A queue management and ticketing app that brings check-in, service tickets, counters, and waiting-room updates into one workspace for service teams.",
+    imagePath: `${process.env.PUBLIC_URL}/Foleni-screenshot.png`,
+    liveUrl: "https://foleni-ticketing-app.vercel.app/",
+    credentialLabel: "Staff demo login",
+    credentials: "email: demo-staff@institution.com | password: DemoStaff123!"
+  },
+  {
     title: "Easy Referrals",
     description:
       "A healthcare referral workflow app that helps teams coordinate patient referrals with a cleaner, faster handoff process.",
