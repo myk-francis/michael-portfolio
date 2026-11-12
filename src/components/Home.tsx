@@ -22,6 +22,7 @@ function Home(): JSX.Element {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
+              <a href="#/resume" className="inline-flex min-h-[44px] items-center rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300 focus-visible:ring-2 focus-visible:ring-cyan-300">View resume</a>
               <Link
                 to="featured"
                 smooth

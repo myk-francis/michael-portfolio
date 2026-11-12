@@ -4,12 +4,30 @@ import Contact from "./components/Contact";
 import FeaturedProjects from "./components/FeaturedProjects";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Resume from "./components/Resume";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import { FaWhatsapp } from "react-icons/fa";
 
 function App(): JSX.Element {
+  const [isResume, setIsResume] = useState(() => ["#/resume", "#resume-download"].includes(window.location.hash));
   const [showWhatsappButton, setShowWhatsappButton] = useState(true);
+
+  useEffect(() => {
+    const handleHashChange = (): void => setIsResume(window.location.hash === "#/resume" || window.location.hash === "#resume-download");
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  useEffect(() => {
+    const previousTitle = document.title;
+    if (isResume) {
+      document.title = "Resume | Mike Mugendi";
+      document.getElementById("resume-heading")?.focus({ preventScroll: true });
+    }
+    document.documentElement.scrollTop = 0;
+    return () => { document.title = previousTitle; };
+  }, [isResume]);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -32,14 +50,16 @@ function App(): JSX.Element {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
-      <Navbar />
+      {!isResume && <Navbar />}
       <main className="overflow-x-clip">
+        {isResume ? <Resume /> : <>
         <Home />
         <About />
         <FeaturedProjects />
         <Skills />
         <Work />
         <Contact />
+        </>}
       </main>
       <footer className="border-t border-white/10 py-8">
         <div className="app-container flex flex-col items-center gap-4 text-center">
@@ -48,7 +68,7 @@ function App(): JSX.Element {
           </p>
         </div>
       </footer>
-      <a
+      {!isResume && <a
         href="https://wa.me/255710503304"
         target="_blank"
         rel="noreferrer"
@@ -63,7 +83,7 @@ function App(): JSX.Element {
           <FaWhatsapp className="text-2xl" aria-hidden="true" />
         </span>
         <span className="hidden sm:inline">WhatsApp Me</span>
-      </a>
+      </a>}
     </div>
   );
 }

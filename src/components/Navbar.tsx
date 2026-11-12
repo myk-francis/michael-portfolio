@@ -37,6 +37,7 @@ function Navbar(): JSX.Element {
               {item.label}
             </Link>
           ))}
+          <a href="#/resume" className="rounded-full px-4 py-2 text-sm text-cyan-300 transition hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-cyan-300">Resume</a>
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -75,6 +76,7 @@ function Navbar(): JSX.Element {
       {mobileOpen ? (
         <nav id="mobile-menu" className="border-t border-white/10 bg-slate-950 md:hidden">
           <div className="app-container flex flex-col py-4">
+            <a href="#/resume" onClick={() => setMobileOpen(false)} className="rounded-lg px-3 py-3 text-base text-cyan-300 hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-cyan-300">Resume</a>
             {navItems.map((item) => (
               <Link
                 key={item.id}
